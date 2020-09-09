@@ -6,8 +6,7 @@ BEGIN
     DECLARE node INTEGER;
     DECLARE incr BIGINT(20);
     
-    SET node = 1;
-    SET schema_node = 1;
+    SET node = @@server_id;
     SET current_ms = round(UNIX_TIMESTAMP(CURTIME(4)) * 1000);
     SET epoch = 1459440000000; #//change your epoch
     
