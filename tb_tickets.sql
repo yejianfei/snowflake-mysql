@@ -3,6 +3,6 @@ CREATE TABLE `tb_tickets` (
   `stub` char(1) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`),
   UNIQUE KEY `stub` (`stub`)
-) AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 
 INSERT INTO `tb_tickets` (`stub`) VALUES ('a');
