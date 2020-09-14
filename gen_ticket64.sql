@@ -7,7 +7,7 @@ BEGIN
     DECLARE incr BIGINT(20);
     
     SET node = @@server_id;
-    SET current_ms = round(UNIX_TIMESTAMP(CURTIME(4)) * 1000);
+    SET current_ms = round(CURRENT_TIMESTAMP(CURTIME(4)) * 1000);
     SET epoch = 1459440000000; #//change your epoch
     
     REPLACE INTO tb_tickets (stub) VALUES ('a');
